@@ -28,12 +28,6 @@ document.getElementById("gerichte").addEventListener("click", function() {
 
   if (ergebnisse.length > 0) {
     ergebnisse.forEach(item => {
-      if (item.title = "" ) {ausgabe.innerHTML += "</div>"}
-      else if (condition) {
-        
-      } else {
-        
-      }{
       ausgabe.innerHTML += `
                       <button type="button" class="list-group-item list-group-item-action">
                           <ul class="list-group">
@@ -43,6 +37,8 @@ document.getElementById("gerichte").addEventListener("click", function() {
                     </ul>
                     </button>`;
     });
+    ausgabe.innerHTML += `</div">`;
+    
   } else {
     ausgabe.innerHTML = "<p>Keine Treffer gefunden.</p></div>";
   }
